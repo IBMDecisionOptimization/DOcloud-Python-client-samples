@@ -1,0 +1,9 @@
+{
+	"provider": ["IBM"], 
+	"name":  "DOcloud Python client samples" ,
+	"model": [ "CPLEX" ],
+	"development": [ "Python" ],
+	"category": [ {"CLIENT":[]} ],
+	"industry": [ "Operational research" ],
+	"abstract": "Sample code for the DOcloud Python client."
+}
