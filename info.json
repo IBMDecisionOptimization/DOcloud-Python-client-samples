@@ -5,5 +5,5 @@
 	"development": [ "Python" ],
 	"category": [ {"CLIENT":[]} ],
 	"industry": [ "Operational research" ],
-	"abstract": "Sample code for the DOcloud Python client."
+	"abstract": "These samples demonstrate how to use the Python Client to submit a problem to the IBM Decision Optimization on Cloud service."
 }
