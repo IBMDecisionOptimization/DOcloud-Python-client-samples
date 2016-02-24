@@ -22,13 +22,15 @@ Before you run the samples, you must install the IBM Decision Optimization on Cl
 
 ## Sample contents
 
-The sample consists of an archive which contains a directory called `examples` containing two subdirectories,  `models` and `trucking`. The `models/` directory contains the OPL `.dat` and `.mod` files. The `trucking/`  directory contains the following sample files :
+The sample consists of an archive which contains a directory called `examples` containing subdirectories. The `models/` directory contains the OPL `.dat` and `.mod` files, as well as other models for the examples. The `trucking/`  directory contains the following sample files :
 * `truck_basic.py` contains the code for running the basic trucking sample
 * `truck_more_options.py` contains the code for running the trucking sample with more options
 * `trucking_json.py` contains the code for running the trucking sample with JSON streaming
 * `model.py` contains `namedtuples` and classes to define the problem
 * `factory.py` contains a problem factory for the samples
 * `multijob.py` contains the code for running multiple jobs concurrently using the same model, but with different data.
+
+Additionaly, the `parallel_solve/` directory contains the Parallel Solve example.
 
 ## Dependencies
 
@@ -103,6 +105,14 @@ You can see the solution in the `results.json` file.
 * Paste your base URL and API Key (clientID) in the `multijob.py` file
 * In a command prompt, navigate to the `examples` directory that contains the subdirectory `trucking` and type:
 `   python trucking/multijob.py`
+
+## To run the parallel solve example
+* This sample shows how you can build a Python application that uses the parallel solve feature of the IBM Decision Optimization on Cloud service. This feature is only available in Reserved Bare Metal subscription.
+* If you are using Python 2, install the `futures` package to run this sample. Type:
+`   pip install futures`
+* Paste your base URL and API Key (clientID) in the `parallel_multi_seed.py` file
+* In a command prompt, navigate to the `examples` directory that contains the subdirectory `trucking` and type:
+`   python parallel_solve/parallel_multi_seed.py`
  
 ## Trucking sample project description
 A shipping company uses a dispatching system to schedule its truck fleet. The dispatching system collects orders from the order management system, assigns the orders to trucks, and schedules the departures and deliveries. Its functions include generating bills of lading, loading tables, route maps for the drivers' GPS, and departure time-tables. It also updates the order management system with projected delivery windows, which in turn, informs the recipients. Currently, the assignment of orders to trucks, which defines the truck routes, is done heuristically, using a set of business rules that the company has found to be effective in the past. However, the VP of Operations believes that substantial cost savings and on-time performance improvements might be achievable with a more systematic routing algorithm. The company's Operations Research department has created such an algorithm using IBM Decision Optimization on Cloud. The IT department now has been tasked to deploy this routing algorithm integrated in the dispatching system.
