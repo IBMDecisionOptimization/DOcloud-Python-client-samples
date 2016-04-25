@@ -1,6 +1,6 @@
 {
 	"provider": ["IBM"], 
-	"name":  "DOcloud Python client samples" ,
+	"name":  "DOcplexcloud Python client samples" ,
 	"model": [ "CPLEX" ],
 	"development": [ "Python" ],
 	"category": [ {"CLIENT":[]} ],

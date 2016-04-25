@@ -1,12 +1,12 @@
 # IBM Decision Optimization on Cloud Python Client samples
 
-IBM Decision Optimization on Cloud (DOcloud) allows you to solve optimization
+IBM Decision Optimization on Cloud (DOcplexcloud) allows you to solve optimization
 problems on the cloud without installing or configuring a solver. We handle
 the connection so that you can jump into coding faster.
 
-This documentation describes the IBM DOcloud Python Client samples.
+This documentation describes the IBM DOcplexcloud Python Client samples.
 
-The Python Client samples demonstrate how to use the Python Client to submit a problem to the IBM Decision Optmization on Cloud service.
+The Python Client samples demonstrate how to use the Python Client to submit a problem to the IBM Decision Optimization on Cloud service.
 
 ## Requirements
 
